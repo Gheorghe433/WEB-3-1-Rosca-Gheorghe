@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laborator JS — Funcții, Obiecte, Metode</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <h1>Obiecte, funcții și metode în JavaScript</h1>
+    <p class="subtitle">Programarea client-side a site-urilor Web — Lucrare de laborator</p>
+  </header>
+
+  <main>
+
+
+    <section class="card" id="ex1">
+      <div class="card-label">Exercițiul 1</div>
+      <h2>Funcție de calcul</h2>
+      <p>Funcția <code>calculateSum(a, b)</code> este apelată automat la încărcarea paginii cu două perechi de valori. Rezultatele se afișează doar în consola browserului.</p>
+      
+    </section>
+
+   
+    <section class="card" id="ex2">
+      <div class="card-label">Exercițiul 2</div>
+      <h2>Obiect cu metodă — <code>student</code></h2>
+      <p>Obiectul <code>student</code> are proprietățile <code>name</code>, <code>age</code>, <code>grade</code> și metoda <code>introduce()</code>. Totul se afișează doar în consola browserului.</p>
+      
+    </section>
+
+  
+    <section class="card game-card" id="ex3">
+      <div class="card-label">Exercițiul 3</div>
+      <h2>Piatra, Hârtia, Foarfeca</h2>
+      <p class="game-tagline">Tu contra calculatorului.</p>
+
+      <div class="choices">
+        <button class="choice-btn" data-choice="piatra">
+          <span class="emoji">🪨</span> Piatra
+        </button>
+        <button class="choice-btn" data-choice="hartia">
+          <span class="emoji">📄</span> Hârtia
+        </button>
+        <button class="choice-btn" data-choice="foarfeca">
+          <span class="emoji">✂️</span> Foarfeca
+        </button>
+      </div>
+
+      <div class="round-display">
+        <div class="round-side">
+          <span class="round-label">Tu</span>
+          <span id="playerChoice" class="round-value">—</span>
+        </div>
+        <div class="vs">vs</div>
+        <div class="round-side">
+          <span class="round-label">Calculator</span>
+          <span id="computerChoice" class="round-value">—</span>
+        </div>
+      </div>
+
+      <div id="roundResult" class="round-result">Alege o variantă pentru a începe.</div>
+
+      <div class="score-board">
+        <div class="score-item">
+          <span class="score-number" id="playerScore">0</span>
+          <span class="score-label">Tu</span>
+        </div>
+        <div class="score-item">
+          <span class="score-number" id="drawScore">0</span>
+          <span class="score-label">Egalități</span>
+        </div>
+        <div class="score-item">
+          <span class="score-number" id="computerScore">0</span>
+          <span class="score-label">Calculator</span>
+        </div>
+      </div>
+
+      <p id="leaderMessage" class="leader-message"></p>
+      <p id="roundsPlayed" class="rounds-played">Runde jucate: 0</p>
+
+      <button id="newGameBtn" class="new-game-btn">Joc nou</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
