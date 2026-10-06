@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laborator 4 – Liste și metodele Array</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Laborator 4 – Liste și metodele Array</h1>
+<p class="sub">Exercițiile 1–2 se afișează în consolă (F12) și aici; 3–5 sunt interactive.</p>
+
+<section>
+<h2>Exercițiile 1 și 2 – rezultate din consolă</h2>
+<div class="out" id="ex12"></div>
+</section>
+
+<section>
+<h2>Exercițiile 3 și 4 – Lista de cumpărături</h2>
+<div class="row">
+<input id="produs" placeholder="Produs">
+<button onclick="adaugaSfarsit()">Adaugă la sfârșit</button>
+<button onclick="adaugaInceput()">Adaugă la început</button>
+</div>
+<div class="row">
+<button onclick="stergePrimul()">Șterge primul</button>
+<button onclick="stergeUltimul()">Șterge ultimul</button>
+</div>
+<div class="out" id="lista"></div>
+</section>
+
+<section>
+<h2>Exercițiul 5 – Catalog electronic al elevilor</h2>
+<div class="row">
+<input id="nume" placeholder="Nume">
+<input id="varsta" type="number" placeholder="Vârsta" style="width:100px">
+<input id="nota" type="number" placeholder="Nota" style="width:90px">
+<button onclick="adaugaElev()">Adaugă elev</button>
+</div>
+<div class="row">
+<input id="numeSterge" placeholder="Numele elevului">
+<button onclick="stergeElev()">Șterge elev</button>
+</div>
+<div class="row">
+<input id="numeCauta" placeholder="Caută elev">
+<button onclick="cautaElev()">Caută</button>
+</div>
+<div class="out" id="rezultat"></div>
+<h2 style="margin-top:16px">Catalog electronic</h2>
+<p id="numar"></p>
+<div id="catalog"></div>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
